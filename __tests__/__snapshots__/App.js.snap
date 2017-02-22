@@ -1,8 +1,36 @@
 exports[`<App /> component should render <App /> correctly 1`] = `
 <div
   className="container">
+  <img
+    className=""
+    src={null} />
   <input
     onChange={[Function]}
     type="file" />
+  <div
+    className="available-actions-container">
+    <div
+      className="action"
+      onClick={[Function]}>
+      Rotate
+    </div>
+    <div
+      className="action"
+      onClick={[Function]}>
+      Translate
+    </div>
+    <div
+      className="action"
+      onClick={[Function]}>
+      Opacity
+    </div>
+    <div
+      className="action"
+      onClick={[Function]}>
+      Bounce
+    </div>
+  </div>
+  <div
+    className="applied-actions-container" />
 </div>
 `;

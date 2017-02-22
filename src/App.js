@@ -46,14 +46,12 @@ class App extends Component {
     });
   }
 
-  getActions = compose(prop('action'), map)
-
   render () {
     return (
       <div className="container">
         <Image
           imageURL={this.state.imageURL}
-          actions={map(prop('action'))(this.state.appliedActions)}
+          actions={map(prop('action'))(this.state.appliedActions).join(' ')}
         />
         <ImagePicker setImageURL={this.setImageURL} />
         <AvailableActions

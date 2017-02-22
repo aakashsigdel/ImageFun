@@ -1,0 +1,4 @@
+exports[`<AppliedActions /> component should render <AppliedActions /> correctly 1`] = `
+<div
+  className="applied-actions-container" />
+`;

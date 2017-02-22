@@ -1,0 +1,5 @@
+exports[`<Image /> component should render <Image /> correctly 1`] = `
+<img
+  className={undefined}
+  src={undefined} />
+`;
