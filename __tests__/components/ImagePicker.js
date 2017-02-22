@@ -8,5 +8,5 @@ describe('<ImagePicker /> component', () => {
     const tree = renderer.create(<ImagePicker />).toJSON();
 
     expect(tree).toMatchSnapshot();
-  })
-})
+  });
+});

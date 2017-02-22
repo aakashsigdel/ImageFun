@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --inline --quiet",
     "clean": "rm -rf ./dist/public",
-    "build": "webpack --config ./tooling/webpack.config.js --progress --colors --bail",
+    "build": "webpack --progress --colors --bail",
     "test": "jest"
   },
   "author": "Aakash Sigdel",

@@ -1,0 +1,8 @@
+exports[`<App /> component should render <App /> correctly 1`] = `
+<div
+  className="container">
+  <input
+    onChange={[Function]}
+    type="file" />
+</div>
+`;
