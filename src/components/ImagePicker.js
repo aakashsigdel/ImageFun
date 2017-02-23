@@ -1,8 +1,8 @@
 import React from 'react';
 
-const handleImageChange = (e, setImageURL) => {
-  // e.preventDefault();
+import './ImagePicker.scss';
 
+const handleImageChange = (e, setImageURL) => {
   const reader = new FileReader();
   const file = e.target.files[0];
 
@@ -11,7 +11,11 @@ const handleImageChange = (e, setImageURL) => {
 };
 
 const ImagePicker = props =>
-  <input type="file" onChange={(e) => handleImageChange(e, props.setImageURL)} />;
+  <input
+    type="file"
+    className="image-chooser"
+    onChange={(e) => handleImageChange(e, props.setImageURL)}
+  />;
 
 export default ImagePicker;
 

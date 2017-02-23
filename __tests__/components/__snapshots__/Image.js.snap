@@ -1,5 +1,8 @@
 exports[`<Image /> component should render <Image /> correctly 1`] = `
-<img
-  className={undefined}
-  src={undefined} />
+<div
+  className="image-container">
+  <img
+    className="image undefined"
+    src="test-file-stub" />
+</div>
 `;

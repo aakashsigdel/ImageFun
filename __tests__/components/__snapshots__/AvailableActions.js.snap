@@ -1,4 +1,10 @@
 exports[`<AvailableActions /> component should render <AvailableActions /> correctly 1`] = `
 <div
-  className="available-actions-container" />
+  className="available-actions-container">
+  <div
+    className="menu-title">
+    Available Actions
+  </div>
+  <ul />
+</div>
 `;

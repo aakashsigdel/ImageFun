@@ -1,5 +1,6 @@
 exports[`<ImagePicker /> component should render <ImagePicker /> correctly 1`] = `
 <input
+  className="image-chooser"
   onChange={[Function]}
   type="file" />
 `;

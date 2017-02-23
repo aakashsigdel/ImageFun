@@ -1,4 +1,10 @@
 exports[`<AppliedActions /> component should render <AppliedActions /> correctly 1`] = `
 <div
-  className="applied-actions-container" />
+  className="applied-actions-container">
+  <div
+    className="menu-title">
+    Applied Actions
+  </div>
+  <ul />
+</div>
 `;
