@@ -8,15 +8,17 @@ import AppliedActions from './components/AppliedActions';
 
 import './App.scss';
 
+const availableActions = [
+  {id: 1, action: 'rotate', name: 'Rotate'},
+  {id: 2, action: 'translateX', name: 'Translate'},
+  {id: 3, action: 'opacity', name: 'Opacity'},
+  {id: 4, action: 'bounce', name: 'Bounce'}
+]
+
 class App extends Component {
   state = {
     imageURL: null,
-    availableActions: [
-      {id: 1, action: 'rotate', name: 'Rotate'},
-      {id: 2, action: 'translateX', name: 'Translate'},
-      {id: 3, action: 'opacity', name: 'Opacity'},
-      {id: 4, action: 'bounce', name: 'Bounce'}
-    ],
+    availableActions, // available action constant
     appliedActions: []
   }
 
@@ -46,14 +48,25 @@ class App extends Component {
     });
   }
 
+  reset = () => {
+    this.setState({
+      availableActions, // available action constant
+      appliedActions: []
+    })
+  }
+
   render () {
     return (
       <div className="container">
+        <button onClick={this.reset} className="reset">Reset</button>
         <Image
           imageURL={this.state.imageURL}
           actions={map(prop('action'))(this.state.appliedActions).join(' ')}
         />
-        <ImagePicker setImageURL={this.setImageURL} />
+        <ImagePicker
+          setImageURL={this.setImageURL}
+          reset={this.reset}
+        />
         <div className="actions">
           <AvailableActions
             availableActions={this.state.availableActions}
