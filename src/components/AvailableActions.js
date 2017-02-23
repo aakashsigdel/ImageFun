@@ -4,14 +4,17 @@ import './Actions.scss';
 
 const AvailableActions = props =>
   <div className="available-actions-container">
-    {props.availableActions.map(item =>
-      <div key={item.id}
-        className="action"
-        onClick={() => {props.pushAction(item)}}
-      >
-        {item.name}
-      </div>
-    )}
+    <div className="menu-title">Available Actions</div>
+    <ul>
+      {props.availableActions.map(action =>
+        <li key={action.id}
+          className="action"
+          onClick={() => {props.pushAction(action)}}
+        >
+          <a>{action.name}</a>
+        </li>
+      )}
+    </ul>
   </div>;
 
 export default AvailableActions;

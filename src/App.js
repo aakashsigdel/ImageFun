@@ -54,14 +54,16 @@ class App extends Component {
           actions={map(prop('action'))(this.state.appliedActions).join(' ')}
         />
         <ImagePicker setImageURL={this.setImageURL} />
-        <AvailableActions
-          availableActions={this.state.availableActions}
-          pushAction={this.pushAvailableAction}
-        />
-        <AppliedActions
-          appliedActions={this.state.appliedActions}
-          popAction={this.popAppliedAction}
-        />
+        <div className="actions">
+          <AvailableActions
+            availableActions={this.state.availableActions}
+            pushAction={this.pushAvailableAction}
+          />
+          <AppliedActions
+            appliedActions={this.state.appliedActions}
+            popAction={this.popAppliedAction}
+          />
+        </div>
       </div>
     );
   }

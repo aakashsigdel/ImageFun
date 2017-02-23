@@ -1,11 +1,37 @@
-.applied-actions-container {
-  .action {
-    color: red;
-  }
-}
+@import "../_variables.scss";
 
 .available-actions-container {
-  .action {
-    color: blue;
+  margin-right: 30px;
+}
+
+.menu-title {
+  background-color: $accent;
+  color: $nav_font;
+  border-radius: 2px;
+  padding: 0.5em 0.75em;
+  line-height: 1.25;
+  width: 250px;
+}
+
+ul {
+  width: 230px;
+  border-left: 1px solid #dbdbdb;
+  margin: 0.75em;
+  padding-left: 0.75em;
+  list-style: none;
+
+  a {
+    border-radius: 2px;
+    color: #4a4a4a;
+    display: block;
+    padding: 0.5em 0.75em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: none 86ms ease-out;
+
+    &:hover {
+      color: $accent;
+      background-color: whitesmoke;
+    }
   }
 }

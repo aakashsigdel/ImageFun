@@ -1,4 +1,28 @@
+@import './_variables.scss';
+
 body {
-  font-family: 'Lato', sans-serif;
-  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: $primary_font;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid lightgrey;
+}
+
+.actions {
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .actions {
+    display: block;
+  }
 }

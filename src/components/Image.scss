@@ -1,8 +1,22 @@
+.image-container {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  height: 150px;
+  width: auto;
+  border-radious: 2px;
+}
 .rotate {
   transform: rotate(75deg);
 }
 
 .translateX {
+  position: relative;
+  left: 40px;
 }
 
 .opacity {
@@ -14,4 +28,3 @@
 
 .reset {
 }
-

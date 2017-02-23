@@ -1,8 +1,14 @@
 import React from 'react';
 
 import './Image.scss';
+import defaultImage from '../../images/placeholder.png';
 
 const Image = props =>
-  <img src={props.imageURL} className={props.actions}/>;
+  <div className="image-container">
+    <img
+      src={props.imageURL ? props.imageURL : defaultImage}
+      className={'image ' + props.actions}
+    />
+  </div>;
 
 export default Image;
