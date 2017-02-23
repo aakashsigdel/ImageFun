@@ -1,8 +1,11 @@
-Image Fun
+#Image Fun
 
-Commands
---
+###Installation
+- Clone the project
+- `npm install`
 
-- run the project: npm start
-
-- run the tests: npm test
+###Commands
+- run the project: `npm start`
+  - project available at `http://localhost:8080/`
+- run the tests: `npm test`
+  - test coverage generated on the command line
